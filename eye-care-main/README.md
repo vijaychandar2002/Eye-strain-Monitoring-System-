@@ -1,3 +1,5 @@
+# Eye Strain Monitoring System using OpenCV
+
 ## Inspiration
 We can't avoid long screen exposure in this corona period because almost everything is online, but as a result, we experience unhealthy eye conditions such as watering eyes, difficulty focusing, and so on. To address this issue, we created a project that will track your exposure and limit.
 
