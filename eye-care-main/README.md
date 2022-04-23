@@ -1,45 +1,26 @@
-# **iCare**
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 ## Inspiration
-In this corona period, with almost everything online we can't avoid long screen exposure but due to this we experience unhealthy eye conditions like watering of eyes, difficulty in focusing etc. To overcome this problem we developed a project that will monitor your limit and monitor your exposure.
+We can't avoid long screen exposure in this corona period because almost everything is online, but as a result, we experience unhealthy eye conditions such as watering eyes, difficulty focusing, and so on. To address this issue, we created a project that will track your exposure and limit.
 
 ## What problems do looking at computer screens cause?
-People who look at computers frequently, (in particular those that look at a computer for more than three hours a day), may experience symptoms such as:
-- Eye discomfort
-- Headaches
-- Itchy eyes
-- Dry or watering eyes
-- Burning sensations
-- Changes in color perception
-- Blurred vision
-- Difficulty focusing
+People who frequently look at computers (especially those who look at a computer for more than three hours per day) may experience symptoms such as:
+- Eye ailment
+- Migraines
+- Scratchy eyes
+- Watery or dry eyes
+- Sensations of burning
+- Color perception changes - Blurred vision
+- Difficulty concentrating
 
 ## What it does
-This applications is programmed to :
-- Monitor our blink duration. In case, of under and over blinking, it sends alert message and adjusts the brightness of screen. 
-- Adjust the screen brightness and warm light strength according to blink rate of user.
-- Adjust the font size according to our distance from screen to avoid strain on eyes.
-- Send alerts to refocus after 20 mins as prescribed by doctors. 
-- It also alerts the user if he exceeds a allowed proximity between monitor and user. (40 cm as prescribed by the doctors) 
-- Automatically activate the night mode according to time zone.
-
+This application is set up to: - Monitor the duration of our blinks. In the event of under or over blinking, it sends an alert message and adjusts the screen brightness.
+- Adjust the screen brightness and warm light strength based on the user's blink rate.
+- To avoid eye strain, adjust the font size based on our distance from the screen.
+- As doctors prescribe, send alerts to refocus after 20 minutes.
+- It also warns the user if he comes within a certain distance of the monitor. (as prescribed by the doctors, 40 cm)
+- Activate the night mode automatically based on the time zone.
  
 ## How we built it
-We are using **computer vision** using opencv2 to find human faces in front of the computer and then monitoring their activity using **AI-Image detection** model. If the model finds that the user is stressing his eyes in any way, the model alerts the user and if the user is still forcing his eyes then the model reduces the screen brightness and takes necessary steps using **Windows service apis**. Further, the the program is converted into a **windows startup service** i.e. this program starts whenever the user boots his/her PC.
-
-## Study sources
-- http://www.nhs.uk/livewell/eyehealth/pages/eyesafety.aspx
-- http://www.princeton.edu/uhs/healthy-living/hot-topics/ergonomics/
-- http://www.une.edu.au/hrs/handbook/04/4.12.pdf
-- http://staffcentral.brighton.ac.uk/.../doc002851.pdf
-- http://www.wellness.uci.edu/toolkit/march/screenstrain.pdf
-- http://www.nhs.uk/conditions/dry-eye-syndrome/Pages/Introduction.aspx
-- http://publichealth.lacounty.gov/.../WorkStationSetUp_Jan2012.pdf
-- http://news.bbc.co.uk/1/hi/health/7967381.stm
-- www.ndt-ed.org/.../contrastsensitivity.htm
-- http://news.bbc.co.uk/1/hi/england/bristol/4753833.stm
-
+We're using **computer vision** with opencv2 to find human faces in front of the computer and then tracking their movements with the **AI-Image detection** model. If the model detects that the user is stressing his eyes in any way, it alerts the user, and if the user continues to force his eyes, the model reduces the screen brightness and takes the necessary steps using **Windows service apis**. Furthermore, the programme is converted into a **Windows startup service**, which means that it runs whenever the user boots his or her computer.
 
 ### How to run?
 - Install the required python packages
